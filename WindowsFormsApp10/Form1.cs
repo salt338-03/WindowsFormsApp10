@@ -51,7 +51,7 @@ namespace WindowsFormsApp10
 
             try
             {
-                var files = Directory.GetFiles(directoryPath, $"*{fileExtension}", SearchOption.AllDirectories);
+                var files = Directory.GetFiles(directoryPath, $"{fileExtension}", SearchOption.AllDirectories);
                 lstResults.Items.Clear();
                 foreach (var file in files)
                 {
