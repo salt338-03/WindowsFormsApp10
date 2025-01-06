@@ -39,13 +39,13 @@ namespace WindowsFormsApp10
 
             if (string.IsNullOrWhiteSpace(directoryPath) || !Directory.Exists(directoryPath))
             {
-                MessageBox.Show("유효한 디렉토리 경로를 입력하세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("디렉토리 경로를 입력하세요.");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(fileExtension))
             {
-                MessageBox.Show("확장자를 입력하세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("확장자를 입력하세요.");
                 return;
             }
 
@@ -60,7 +60,7 @@ namespace WindowsFormsApp10
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"오류 발생: {ex.Message}", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"오류 발생: {ex.Message}");
             }
             // 백그라운드 작업 실행 로직
         }
